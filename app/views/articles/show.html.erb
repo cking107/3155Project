@@ -1,25 +1,25 @@
 <p>
-  <strong>Title:</strong>
+  <strong>Meal:</strong>
   <%= @article.title %>
 </p>
  
 <p>
-  <strong>Text:</strong>
+  <strong>Ingredients:</strong>
   <%= @article.text %>
 </p>
-<h2>Comments</h2>
+<h2>Instructions</h2>
 <% @article.comments.each do |comment| %>
   <p>
-    <strong>Commenter:</strong>
+    <strong>Author:</strong>
     <%= comment.commenter %>
   </p>
  
   <p>
-    <strong>Comment:</strong>
+    <strong>Instructions:</strong>
     <%= comment.body %>
   </p>
 <% end %>
-<h2>Add a comment:</h2>
+<h2>Add instructions:</h2>
 <%= form_for([@article, @article.comments.build]) do |f| %>
   <p>
     <%= f.label :commenter %><br>
@@ -33,4 +33,4 @@
     <%= f.submit %>
   </p>
 <% end %>
-<%= link_to 'Article List', articles_path %>
+<%= link_to 'Recipe List', articles_path %>
