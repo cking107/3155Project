@@ -7,18 +7,10 @@
   <strong>Ingredients:</strong>
   <%= @article.text %>
 </p>
+
 <h2>Instructions</h2>
-<% @article.comments.each do |comment| %>
-  <p>
-    <strong>Author:</strong>
-    <%= comment.commenter %>
-  </p>
- 
-  <p>
-    <strong>Instructions:</strong>
-    <%= comment.body %>
-  </p>
-<% end %>
+<%= render @article.comments %>
+
 <h2>Add instructions:</h2>
 <%= form_for([@article, @article.comments.build]) do |f| %>
   <p>
