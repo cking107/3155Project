@@ -9,7 +9,11 @@
   <strong>Ingredients:</strong>
   <%= @article.text %>
 </p>
-
+<br />
+<br />
+<%= image_tag @article.image.url(:large) %>
+<br />
+<br />
 <h2>Instructions</h2>
 <%= render @article.comments %>
 
