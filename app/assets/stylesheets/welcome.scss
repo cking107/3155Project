@@ -2,8 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 h1 {
-    font-size: 32px;
+    font-size: 40px;
     color: #4A6670;
+    text-align: center;
 }
 
 body
@@ -11,11 +12,40 @@ body
     background: #A0AF84;
 }
 
+p {
+    text-align: center;
+}
+
+html {
+    font-family: Arial;
+}
+
 .image1 {
     width: 300px;
+    display: inline-block;
+    padding-left: 30px;
 }
 
 .image2 {
-    float: right;
     width: 300px;
+    display: inline-block;
+    padding-left: 70px;
+}
+
+.image3 {
+    width: 300px;
+    display: inline-block;
+    padding-left: 70px;
+}
+
+.image4 {
+    width: 300px;
+    display: inline-block;
+    padding-left: 70px;
+}
+
+.recipeimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
