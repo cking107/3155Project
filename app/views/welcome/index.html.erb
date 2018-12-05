@@ -1,12 +1,14 @@
 <h1>Welcome, To Your Recipe Book!</h1>
+<p class="myrecipeslink">
  <%= link_to 'My Recipes', controller: 'articles' %><br>
+</p>
  
- <p>This is an online recipe book that you can use to add recipes with their
+ <p class="welcomeparagraph">This is an online recipe book that you can use to add recipes with their
  instructions on how to make them. Click on the "My Recipes" link to get 
  started!</p><br>
  
+ <%= image_tag("recipebook.jpg", class: "recipeimage") %>
  <%= image_tag("FoodImg1.jpg", class: "image1") %>
  <%= image_tag("FoodImg2.jpg", class: "image2") %>
- <%= image_tag("FoodImg3.jpg", class: "image3") %>
- <%= image_tag("FoodImg4.jpeg", class: "image4") %><br><br><br>
- <%= image_tag("recipebook.jpg", class: "recipeimage") %>
+ <%= image_tag("FoodImg3.jpeg", class: "image3") %>
+ 

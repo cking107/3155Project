@@ -1,11 +1,11 @@
 <%= form_for([@article, @article.comments.build]) do |f| %>
     <p>
         <%= f.label :commenter, 'Author' %><br>
-        <%= f.text_field :commenter %>
+        <%= f.text_field :commenter, placeholder: "Enter your name here" %>
     </p>
     <p>
         <%= f.label :body, 'Instructions' %><br>
-        <%= f.text_area :body %>
+        <%= f.text_area :body, placeholder: "Enter instructions on how to make your meal here" %>
     </p>
     <p>
         <%= f.submit "Add Instructions" %>

@@ -12,8 +12,9 @@ body
     background: #A0AF84;
 }
 
-p {
+.welcomeparagraph {
     text-align: center;
+    color: #4A6670;
 }
 
 html {
@@ -24,12 +25,14 @@ html {
     width: 300px;
     display: inline-block;
     padding-left: 70px;
+    padding-bottom: 10px;
 }
 
 .image2 {
     width: 300px;
     display: inline-block;
     padding-left: 70px;
+    padding-bottom: 10px;
 }
 
 .image3 {
@@ -38,16 +41,12 @@ html {
     padding-left: 70px;
 }
 
-.image4 {
-    width: 300px;
-    display: inline-block;
-    padding-left: 70px;
+.recipeimage {
+    width: 555px;
+    float: left;
+    margin-left: 15%;
 }
 
-.recipeimage {
-    width: 540px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.myrecipeslink {
+    text-align: center;
 }
